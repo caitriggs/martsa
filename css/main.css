@@ -8,7 +8,7 @@ body {
 }
 
 /* Style for menu buttons */
-nav a {
+nav li a {
 	text-decoration: none;
 	font-family: 'Buda', cursive;
 	font-size: 20px;
@@ -33,24 +33,23 @@ ul {
 	padding: 0px;
 }
 
-.header-container {
+#header-container {
 	text-align: center;
 	margin: 0 auto; 
 	position: relative;
 	height: 190px;
 }
 
-.header-container * {
+#header-container * {
 	display: inline-block;
 }
 
 #martsa-main {
-	width: 35%;	
-	min-width: 150px;
+	width: 230px;
 }
 
-.photos {
-	height: 300px;
+#photo-band {
+	height: 350px;
 	background-image: url("../img/tweed_2x.png"); 
 	background-repeat: repeat;
 
@@ -60,10 +59,30 @@ ul {
     box-shadow: inset 0 0 10px #262626;
 }
 
+#photos {
+	height: 250px;
+	width: 400px;
+	overflow-y: hidden;
+
+	border: solid 8px #C2C8D1;
+	position: relative;
+	margin: 0 auto;
+	top: 40px;
+
+	-webkit-box-shadow: 0 20px 6px -6px #262626;
+	-moz-box-shadow: 0 20px 6px -6px #262626;
+	box-shadow: 0 20px 6px -6px #262626;
+}
+
+#photos img {
+	width: 100%;
+
+}
+
 #beads-corner {
 	position: absolute;
 	max-width: 400px;
-	width: 60%;
+	width: 50%;
 	bottom: 0px;
 	left: 0px;
 }
