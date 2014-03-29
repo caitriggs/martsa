@@ -1,0 +1,76 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700|Gafata|Buda:300);
+
+
+body {
+	background-image: url("../img/tweed.png"); 
+	background-repeat: repeat;
+	font-family: 'Gafata', sans-serif; 
+}
+
+/* Style for menu buttons */
+nav a {
+	text-decoration: none;
+	font-family: 'Buda', cursive;
+	font-size: 20px;
+	color: #f0e17f;
+	text-shadow: 1px 2px 2px #262626;
+
+	padding: 10px;
+	margin: 5px;
+	position: relative;
+	top: -110px;
+
+	/* Drop shadow on bottom and drop shadow outside */
+	border: solid 2px #f0e17f;
+	border-radius: 7px;
+	-webkit-box-shadow: 0 10px 6px -8px #262626;
+	-moz-box-shadow: 0 10px 6px -8px #262626;
+	box-shadow: 0 10px 6px -6px #262626;
+}
+
+/* Removes indentation caused by original unordered list */
+ul {
+	padding: 0px;
+}
+
+
+.header-container {
+	text-align: center;
+	margin: 0 auto; 
+	position: relative;
+	height: 250px;
+	overflow-y: hidden;
+}
+
+.header-container * {
+	display: inline-block;
+}
+
+#martsa-main {
+	width: 35%;	
+	min-width: 150px;
+}
+
+.photos {
+	
+}
+
+#beads-corner {
+	position: absolute;
+	max-width: 400px;
+	width: 60%;
+	bottom: 0px;
+	left: 0px;
+}
+
+
+@media screen and (max-width: 580px) {
+	#beads-corner {
+		display: none;
+	}
+
+	nav a {
+		/* mobile friendly menu here */
+	}
+
+}
