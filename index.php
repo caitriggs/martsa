@@ -1,5 +1,5 @@
 <?php include "templates/header.php"; ?>
-    <div id="photo-band">
+    <div id="tweed-band">
         <div id="photos">
             <img id="homeImage" src=""/>
         </div>    

@@ -1,10 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700|Gafata|Buda:300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:900);
 
+/* Color Reference:
+		Red background: #B8312C
+		Gold text: #F0E17F;
+		almost black: #262626;
+		tweed grey: #5F5F5F;
+*/
+
+
+/* ======= Header and general background styling ======= */
 
 body {
 	background-image: url("../img/tweed.png"); 
 	background-repeat: repeat;
 	font-family: 'Gafata', sans-serif; 
+	font-size: 20px;
+	color: #262626;
 }
 
 #header-container {
@@ -22,7 +34,7 @@ body {
 nav li a {
 	text-decoration: none;
 	font-family: 'Buda', cursive;
-	font-size: 25px;
+	font-size: 22px;
 	color: #f0e17f;
 	text-shadow: 1px 2px 2px #262626;
 
@@ -48,7 +60,9 @@ ul {
 	width: 230px;
 }
 
-#photo-band {
+/* ======= HOME: Begin styling for "Home" page ======= */
+
+#tweed-band {
 	height: 400px;
 	background-image: url("../img/tweed_2x.png"); 
 	background-repeat: repeat;
@@ -86,9 +100,64 @@ ul {
 	left: 0px;
 }
 
+
+
+
+/* ======= MENU: Begin styling for "Menu" page ======= */
+
+#tweed-band-menu {
+	height: 400px;
+	background-image: url("../img/tweed_2x.png"); 
+	background-repeat: repeat;
+
+	/* inside box shadow */
+	-moz-box-shadow: inset 0 0 10px #262626;
+    -webkit-box-shadow: inset 0 0 10px #262626;
+    box-shadow: inset 0 0 10px #262626;
+}
+
+#paragraph {
+	background-color: rgba(150, 150, 150, .3);
+	width: auto;
+	padding: 50px 200px 20px 200px;
+	height: 330px;
+	overflow-y: scroll;
+	-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+}
+
+#paragraph p {
+	display: block;
+}
+
+.heading {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+}
+
+.item {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	float: left;
+}
+
+.description {
+	padding: 0px 10px 0px 10px;
+}
+
+.price {
+	float: right;
+	text-align: right;
+}
+
+
+
+/* ======= MEDIA QUERY styling ======= */
+
 /* If screen width is anything larger than an iPhone, 
 	but smaller than a desktop, then show this style */
-@media only screen and (min-device-width: 321px) and (max-device-width: 650px) {
+@media only screen and (min-width: 321px) and (max-width: 650px) {
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -103,10 +172,10 @@ ul {
 		color: #f0e17f;
 		text-shadow: 1px 2px 2px #262626;
 
-		padding: 4px;
-		margin: 3px;
+		padding: 8px 4px 8px 4px;
+		margin: 2px;
 		position: relative;
-		top: -40px;
+		top: -45px;
 
 		/* Drop shadow on bottom and drop shadow outside */
 		border: solid 1px #f0e17f;
@@ -117,28 +186,64 @@ ul {
 	}
 
 	#martsa-main {
-		width: 100px;
+		width: 108px;
 		position: relative;
-		top: 5px;
+		top: 20px;
 	}
 
-	#photo-band {
+	#tweed-band {
 		height: 300px;
 	}
+
+	#tweed-band-menu {
+		height: 400px;
+	}
+
 	#photos {
-		height: 180px;
-		width: 290px;
+		height: 185px;
+		width: 300px;
 	}
 
 	#beads-corner {
 		display: none;
+	}
+
+	#paragraph {
+		background-color: rgba(150, 150, 150, .3);
+		width: auto;
+		padding: 20px 20px 20px 20px;
+		height: 360px;
+		overflow-y: scroll;
+		-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	}
+
+	.heading {
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+	}
+
+	.item {
+		font-family: 'Raleway', sans-serif;
+		font-size: 17px;
+		float: left;
+	}
+
+	.description {
+		padding: 0px 10px 0px 10px;
+	}
+
+	.price {
+		float: right;
+		text-align: right;
 	}
 }
 
 
 /* If screen width is 320px or smaller (like the iPhone), 
 	then show this style */
-@media screen and (max-device-width: 320px) {
+@media screen and (max-width: 320px) {
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -153,8 +258,8 @@ ul {
 		color: #f0e17f;
 		text-shadow: 1px 2px 2px #262626;
 
-		padding: 2px;
-		margin: 2px;
+		padding: 8px 2px 8px 2px;
+		margin: 1px;
 		position: relative;
 		top: -40px;
 
@@ -166,21 +271,55 @@ ul {
 	}
 
 	#martsa-main {
-		width: 90px;
+		width: 95px;
 		position: relative;
-		top: 5px;
+		top: 20px;
 	}
 
-	#photo-band {
-		height: 250px;
+	#tweed-band {
+		height: 225px;
 	}
+
 	#photos {
-		height: 125px;
-		width: 225px;
+		height: 150px;
+		width: 250px;
 		border: solid 6px #C2C8D1;
+		position: relative;
+		top: 25px;
 	}
 
 	#beads-corner {
 		display: none;
+	}
+
+	#paragraph {
+		background-color: rgba(150, 150, 150, .3);
+		width: auto;
+		padding: 20px 20px 20px 20px;
+		height: 360px;
+		overflow-y: scroll;
+		-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	}
+
+	.heading {
+		font-family: 'Raleway', sans-serif;
+		font-size: 18px;
+	}
+
+	.item {
+		font-family: 'Raleway', sans-serif;
+		font-size: 17px;
+		float: left;
+	}
+
+	.description {
+		padding: 0px 10px 0px 10px;
+	}
+
+	.price {
+		float: right;
+		text-align: right;
 	}
 }
