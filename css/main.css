@@ -86,8 +86,9 @@ ul {
 	left: 0px;
 }
 
-/* If screen width is less than 580px, then show this */
-@media screen and (max-width: 650px) {
+/* If screen width is anything larger than an iPhone, 
+	but smaller than a desktop, then show this style */
+@media only screen and (min-device-width: 321px) and (max-device-width: 650px) {
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -132,6 +133,54 @@ ul {
 	#beads-corner {
 		display: none;
 	}
+}
 
 
+/* If screen width is 320px or smaller (like the iPhone), 
+	then show this style */
+@media screen and (max-device-width: 320px) {
+	#header-container {
+		text-align: center;
+		margin: 0 auto; 
+		position: relative;
+		height: 100px;
+	}
+
+	nav li a {
+		text-decoration: none;
+		font-family: 'Buda', cursive;
+		font-size: 16px;
+		color: #f0e17f;
+		text-shadow: 1px 2px 2px #262626;
+
+		padding: 2px;
+		margin: 2px;
+		position: relative;
+		top: -40px;
+
+		border: solid 1px #f0e17f;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 10px 6px -8px #262626;
+		-moz-box-shadow: 0 10px 6px -8px #262626;
+		box-shadow: 0 10px 6px -6px #262626;
+	}
+
+	#martsa-main {
+		width: 90px;
+		position: relative;
+		top: 5px;
+	}
+
+	#photo-band {
+		height: 250px;
+	}
+	#photos {
+		height: 125px;
+		width: 225px;
+		border: solid 6px #C2C8D1;
+	}
+
+	#beads-corner {
+		display: none;
+	}
 }
