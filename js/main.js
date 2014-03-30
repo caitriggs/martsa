@@ -1,5 +1,4 @@
 
-
 var homePhotos = [
 	"img/home_photos/tibetan_01.jpg",
 	"img/home_photos/tibetan_11.jpg",
@@ -45,4 +44,6 @@ function changeSeconds() {
 
 showPhoto(homePhotos[0]);
 setInterval(changeSeconds, 4000);
+
+
 

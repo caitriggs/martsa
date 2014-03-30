@@ -5,6 +5,7 @@
 		Red background: #B8312C
 		Gold text: #F0E17F;
 		almost black: #262626;
+		lighter almost black: #333333;
 		tweed grey: #5F5F5F;
 */
 
@@ -24,6 +25,10 @@ body {
 	margin: 0 auto; 
 	position: relative;
 	height: 180px;
+
+	-webkit-box-shadow: 0 4px 4px -2px #333333;
+    -moz-box-shadow: 0 4px 4px -2px #333333;
+    box-shadow: 0 4px 4px -2px #333333;
 }
 
 #header-container * {
@@ -74,7 +79,7 @@ ul {
 }
 
 #photos {
-	height: 300px;
+	height: 290px;
 	width: 475px;
 	overflow-y: hidden;
 
@@ -105,7 +110,7 @@ ul {
 
 /* ======= MENU: Begin styling for "Menu" page ======= */
 
-#tweed-band-menu {
+#tweed-band-tall {
 	height: 400px;
 	background-image: url("../img/tweed_2x.png"); 
 	background-repeat: repeat;
@@ -117,14 +122,15 @@ ul {
 }
 
 #paragraph {
-	background-color: rgba(150, 150, 150, .3);
 	width: auto;
-	padding: 50px 200px 20px 200px;
-	height: 330px;
-	overflow-y: scroll;
-	-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	padding: 0px 150px 0px 150px;
+	height: inherit;
+	overflow-y: scroll;	
+}
+
+#paragraph-block {
+	
+	padding: 50px;
 }
 
 #paragraph p {
@@ -153,11 +159,49 @@ ul {
 
 
 
+/* ======= ABOUT: Begin styling for "About" page ======= */
+
+#about-container {
+	width: auto;
+	padding: 50px 300px 0px 400px;
+	height: 350px;
+	overflow-y: scroll;	
+}
+
+#about-container p {
+	line-height: 25px;
+}
+
+#about-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+}
+
+
+
+/* ======= CONTACT: Begin styling for "Contact" page ======= */
+
+#map-canvas {
+	width: auto;
+	height: 400px;
+	z-index: -3;
+
+	-moz-box-shadow: inset 0 0 10px #262626;
+    -webkit-box-shadow: inset 0 0 10px #262626;
+    box-shadow: inset 0 0 10px #262626;
+}
+
+
+
 /* ======= MEDIA QUERY styling ======= */
 
 /* If screen width is anything larger than an iPhone, 
 	but smaller than a desktop, then show this style */
 @media only screen and (min-width: 321px) and (max-width: 650px) {
+	body {
+		font-size: 17px;
+	}
+
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -195,7 +239,7 @@ ul {
 		height: 300px;
 	}
 
-	#tweed-band-menu {
+	#tweed-band-tall {
 		height: 400px;
 	}
 
@@ -209,14 +253,14 @@ ul {
 	}
 
 	#paragraph {
-		background-color: rgba(150, 150, 150, .3);
 		width: auto;
-		padding: 20px 20px 20px 20px;
-		height: 360px;
-		overflow-y: scroll;
-		-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+		padding: 0px 20px 0px 20px;
+		height: inherit;
+		overflow-y: scroll;	
+	}
+
+	#paragraph-block {
+		padding: 20px;
 	}
 
 	.heading {
@@ -238,12 +282,32 @@ ul {
 		float: right;
 		text-align: right;
 	}
+
+	#about-container {
+		width: auto;
+		padding: 25px 10px 0px 10px;
+		height: 375px;
+		overflow-y: scroll;	
+	}
+
+	#about-container p {
+		line-height: 20px;
+	}
+
+	#about-header {
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+	}
 }
 
 
 /* If screen width is 320px or smaller (like the iPhone), 
 	then show this style */
 @media screen and (max-width: 320px) {
+	body {
+		font-size: 17px;
+	}
+
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -280,6 +344,10 @@ ul {
 		height: 225px;
 	}
 
+	#tweed-band-tall {
+		height: 350px;
+	}
+
 	#photos {
 		height: 150px;
 		width: 250px;
@@ -293,14 +361,14 @@ ul {
 	}
 
 	#paragraph {
-		background-color: rgba(150, 150, 150, .3);
 		width: auto;
-		padding: 20px 20px 20px 20px;
-		height: 360px;
-		overflow-y: scroll;
-		-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+		padding: 0px 10px 0px 10px;
+		height: inherit;
+		overflow-y: scroll;	
+	}
+
+	#paragraph-block {
+		padding: 15px;
 	}
 
 	.heading {
@@ -321,5 +389,21 @@ ul {
 	.price {
 		float: right;
 		text-align: right;
+	}
+
+	#about-container {
+		width: auto;
+		padding: 20px 10px 0px 10px;
+		height: 330px;
+		overflow-y: scroll;	
+	}
+
+	#about-container p {
+		line-height: 20px;
+	}
+
+	#about-header {
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
 	}
 }
