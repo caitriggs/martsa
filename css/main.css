@@ -7,18 +7,29 @@ body {
 	font-family: 'Gafata', sans-serif; 
 }
 
+#header-container {
+	text-align: center;
+	margin: 0 auto; 
+	position: relative;
+	height: 180px;
+}
+
+#header-container * {
+	display: inline-block;
+}
+
 /* Style for menu buttons */
 nav li a {
 	text-decoration: none;
 	font-family: 'Buda', cursive;
-	font-size: 20px;
+	font-size: 25px;
 	color: #f0e17f;
 	text-shadow: 1px 2px 2px #262626;
 
 	padding: 10px;
-	margin: 5px;
+	margin: 10px;
 	position: relative;
-	top: -110px;
+	top: -130px;
 
 	/* Drop shadow on bottom and drop shadow outside */
 	border: solid 2px #f0e17f;
@@ -33,23 +44,12 @@ ul {
 	padding: 0px;
 }
 
-#header-container {
-	text-align: center;
-	margin: 0 auto; 
-	position: relative;
-	height: 190px;
-}
-
-#header-container * {
-	display: inline-block;
-}
-
 #martsa-main {
 	width: 230px;
 }
 
 #photo-band {
-	height: 350px;
+	height: 400px;
 	background-image: url("../img/tweed_2x.png"); 
 	background-repeat: repeat;
 
@@ -60,14 +60,14 @@ ul {
 }
 
 #photos {
-	height: 250px;
-	width: 400px;
+	height: 300px;
+	width: 475px;
 	overflow-y: hidden;
 
 	border: solid 8px #C2C8D1;
 	position: relative;
 	margin: 0 auto;
-	top: 40px;
+	top: 45px;
 
 	-webkit-box-shadow: 0 20px 6px -6px #262626;
 	-moz-box-shadow: 0 20px 6px -6px #262626;
@@ -76,25 +76,62 @@ ul {
 
 #photos img {
 	width: 100%;
-
 }
 
 #beads-corner {
 	position: absolute;
 	max-width: 400px;
-	width: 50%;
+	width: 40%;
 	bottom: 0px;
 	left: 0px;
 }
 
+/* If screen width is less than 580px, then show this */
+@media screen and (max-width: 650px) {
+	#header-container {
+		text-align: center;
+		margin: 0 auto; 
+		position: relative;
+		height: 100px;
+	}
 
-@media screen and (max-width: 580px) {
+	nav li a {
+		text-decoration: none;
+		font-family: 'Buda', cursive;
+		font-size: 17px;
+		color: #f0e17f;
+		text-shadow: 1px 2px 2px #262626;
+
+		padding: 4px;
+		margin: 3px;
+		position: relative;
+		top: -40px;
+
+		/* Drop shadow on bottom and drop shadow outside */
+		border: solid 1px #f0e17f;
+		border-radius: 7px;
+		-webkit-box-shadow: 0 10px 6px -8px #262626;
+		-moz-box-shadow: 0 10px 6px -8px #262626;
+		box-shadow: 0 10px 6px -6px #262626;
+	}
+
+	#martsa-main {
+		width: 100px;
+		position: relative;
+		top: 5px;
+	}
+
+	#photo-band {
+		height: 300px;
+	}
+	#photos {
+		height: 180px;
+		width: 290px;
+	}
+
 	#beads-corner {
 		display: none;
 	}
 
-	nav a {
-		/* mobile friendly menu here */
-	}
 
 }
