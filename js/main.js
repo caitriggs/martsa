@@ -1,4 +1,5 @@
 
+// Changes photo in the homePhotos array every 5 second
 var homePhotos = [
 	"img/home_photos/tibetan_01.jpg",
 	"img/home_photos/tibetan_11.jpg",
@@ -44,6 +45,11 @@ function changeSeconds() {
 
 showPhoto(homePhotos[0]);
 setInterval(changeSeconds, 4000);
+
+
+// Changes background of selected menu button
+
+
 
 
 

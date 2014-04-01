@@ -18,3 +18,5 @@
 	<div> 
         <img id="beads-corner" src="img/beads_corner_2.png"/>
     </div> 
+</body>
+</html>
