@@ -1,4 +1,6 @@
 <?php include "templates/header.php"; ?>
+<!-- A comment to test the Github push feature --> 
+
     <div id="tweed-band">
         <div id="photos">
             <img id="homeImage" src=""/>
