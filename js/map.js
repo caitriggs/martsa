@@ -32,14 +32,3 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-
-// Link to Google Maps for Martsa
-// One link for iOS and any other device
-function myNavFunc(){
-    // If it's an iPhone..
-    if( (navigator.platform.indexOf("iPhone") != -1) 
-        || (navigator.platform.indexOf("iPod") != -1))
-         window.open("maps://maps.google.com/maps/place/Martsa+On+Elm/@42.394942,-71.121487,17z/data=!3m1!4b1!4m2!3m1!1s0x89e377189ecadaaf:0xf5b19bff92004f2b");
-    else
-         window.open("https://www.google.com/maps/place/Martsa+On+Elm/@42.394942,-71.121487,17z/data=!3m1!4b1!4m2!3m1!1s0x89e377189ecadaaf:0xf5b19bff92004f2b");
-}
