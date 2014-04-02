@@ -140,6 +140,7 @@ ul {
 	padding: 50px;
 	min-width: 400px;
 	max-width: 1000px;
+	background-color: rgba(223,186,105, .3);
 }
 
 #paragraph p {
@@ -184,8 +185,9 @@ ul {
 	min-width: 400px;
 	height: 360px;
 	margin: 0px 25% 0px 35%;
-	padding-top: 40px;
+	padding: 40px 20px 0px 20px;
 	overflow-y: scroll;
+	background-color: rgba(223,186,105, .3);
 }
 
 #about-container p {
