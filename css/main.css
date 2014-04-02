@@ -5,6 +5,7 @@
 		Red background: #B8312C
 		Gold text: #F0E17F;
 		almost black: #262626;
+		lighter almost black: #333333;
 		tweed grey: #5F5F5F;
 */
 
@@ -24,6 +25,11 @@ body {
 	margin: 0 auto; 
 	position: relative;
 	height: 180px;
+	z-index: 4;
+
+	-webkit-box-shadow: 0 4px 4px -2px #333333;
+    -moz-box-shadow: 0 4px 4px -2px #333333;
+    box-shadow: 0 4px 4px -2px #333333;
 }
 
 #header-container * {
@@ -51,6 +57,12 @@ nav li a {
 	box-shadow: 0 10px 6px -6px #262626;
 }
 
+.buttonSelected {
+	background-image: url("../img/fingerprint.png"); 
+	background-repeat: repeat;
+	/* background-color: rgba(240, 225, 127, .3) */
+}
+
 /* Removes indentation caused by original unordered list */
 ul {
 	padding: 0px;
@@ -60,11 +72,12 @@ ul {
 	width: 230px;
 }
 
+
 /* ======= HOME: Begin styling for "Home" page ======= */
 
 #tweed-band {
 	height: 400px;
-	background-image: url("../img/tweed_2x.png"); 
+	background-image: url("../img/fingerprint_small.png"); 
 	background-repeat: repeat;
 
 	/* inside box shadow */
@@ -74,7 +87,7 @@ ul {
 }
 
 #photos {
-	height: 300px;
+	height: 290px;
 	width: 475px;
 	overflow-y: hidden;
 
@@ -94,10 +107,10 @@ ul {
 
 #beads-corner {
 	position: absolute;
-	max-width: 400px;
-	width: 40%;
+	width: 35%;
 	bottom: 0px;
 	left: 0px;
+	z-index: 6;
 }
 
 
@@ -105,9 +118,9 @@ ul {
 
 /* ======= MENU: Begin styling for "Menu" page ======= */
 
-#tweed-band-menu {
+#tweed-band-tall {
 	height: 400px;
-	background-image: url("../img/tweed_2x.png"); 
+	background-image: url("../img/fingerprint_small.png"); 
 	background-repeat: repeat;
 
 	/* inside box shadow */
@@ -117,14 +130,16 @@ ul {
 }
 
 #paragraph {
-	background-color: rgba(150, 150, 150, .3);
-	width: auto;
-	padding: 50px 200px 20px 200px;
-	height: 330px;
-	overflow-y: scroll;
-	-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	width: 70%;
+	margin: 0px 5% 0px 25%;
+	height: inherit;
+	overflow-y: scroll;	
+}
+
+#paragraph-block {
+	padding: 50px;
+	min-width: 400px;
+	max-width: 1000px;
 }
 
 #paragraph p {
@@ -151,6 +166,101 @@ ul {
 	text-align: right;
 }
 
+#mint-corner {
+	position: absolute;
+	max-width: 300px;
+	width: 40%;
+	bottom: 0px;
+	left: 0px;
+	z-index: 6;
+}
+
+
+
+/* ======= ABOUT: Begin styling for "About" page ======= */
+
+#about-container {
+	width: 60%;
+	min-width: 400px;
+	height: 360px;
+	margin: 0px 25% 0px 35%;
+	padding-top: 40px;
+	overflow-y: scroll;
+}
+
+#about-container p {
+	line-height: 25px;
+}
+
+#about-header {
+	font-family: 'Raleway', sans-serif;
+	font-size: 22px;
+}
+
+#tibetan-corner {
+	position: absolute;
+	height: 75%;
+	max-width: 30%;
+	bottom: 0px;
+	left: 0px;
+	z-index: 6;
+}
+
+
+/* ======= CONTACT: Begin styling for "Contact" page ======= */
+
+.hidden {
+	display: none;
+}
+
+#map-canvas {
+	width: auto;
+	height: 400px;
+	z-index: 3;
+
+	-moz-box-shadow: inset 0 0 10px #262626;
+    -webkit-box-shadow: inset 0 0 10px #262626;
+    box-shadow: inset 0 0 10px #262626;
+}
+
+#contact-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	color: #262626;
+}
+
+#contact-content {
+	font-family: 'Gafata', sans-serif; 
+	font-size: 18px;
+	color: #262626;
+}
+
+#contact-content-container {
+	position: relative;
+	float: right;
+	width: 170px;
+	bottom: 100px;
+	right: 0px;
+	z-index: 5;
+
+	padding: 5px;
+	border-radius: 5px 0px 0px 5px;
+
+	background-image: url("../img/tweed.png"); 
+	background-repeat: repeat;
+}
+
+#contact-title-inset {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	color: #F0E17F;
+}
+
+#contact-content-inset {
+	font-family: 'Gafata', sans-serif; 
+	font-size: 18px;
+	color: #F0E17F;
+}
 
 
 /* ======= MEDIA QUERY styling ======= */
@@ -158,6 +268,10 @@ ul {
 /* If screen width is anything larger than an iPhone, 
 	but smaller than a desktop, then show this style */
 @media only screen and (min-width: 321px) and (max-width: 650px) {
+	body {
+		font-size: 17px;
+	}
+
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -195,10 +309,11 @@ ul {
 		height: 300px;
 	}
 
-	#tweed-band-menu {
+	#tweed-band-tall {
 		height: 400px;
 	}
 
+/* Home styling */
 	#photos {
 		height: 185px;
 		width: 300px;
@@ -208,15 +323,22 @@ ul {
 		display: none;
 	}
 
+/* Menu styling */
 	#paragraph {
-		background-color: rgba(150, 150, 150, .3);
-		width: auto;
-		padding: 20px 20px 20px 20px;
-		height: 360px;
-		overflow-y: scroll;
-		-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+	width: auto;
+	margin: 0px 10% 0px 10%;
+	padding-top: 15px;
+	height: 385px;
+	overflow-y: scroll;	
+	}
+
+	#paragraph-block {
+		padding: 10px;
+		min-width: 100px;
+	}
+
+	#paragraph p {
+		display: block;
 	}
 
 	.heading {
@@ -238,12 +360,42 @@ ul {
 		float: right;
 		text-align: right;
 	}
+
+	#mint-corner {
+		display: none;
+	}
+
+/* About styling */
+	#about-container {
+		width: auto;
+		min-width: 50px;
+		margin: 0px 10% 0px 10%;
+		height: 360px;
+		overflow-y: scroll;	
+	}
+
+	#about-container p {
+		line-height: 20px;
+	}
+
+	#about-header {
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+	}
+
+	#tibetan-corner {
+		display: none;
+	}
 }
 
 
 /* If screen width is 320px or smaller (like the iPhone), 
 	then show this style */
 @media screen and (max-width: 320px) {
+	body {
+		font-size: 17px;
+	}
+
 	#header-container {
 		text-align: center;
 		margin: 0 auto; 
@@ -280,6 +432,11 @@ ul {
 		height: 225px;
 	}
 
+	#tweed-band-tall {
+		height: 350px;
+	}
+
+/* Home styling */
 	#photos {
 		height: 150px;
 		width: 250px;
@@ -292,15 +449,22 @@ ul {
 		display: none;
 	}
 
+/* Menu styling */
 	#paragraph {
-		background-color: rgba(150, 150, 150, .3);
 		width: auto;
-		padding: 20px 20px 20px 20px;
-		height: 360px;
-		overflow-y: scroll;
-		-moz-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    -webkit-box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
-	    box-shadow: inset 0 10px 10px -10px #262626, inset 0 10px 10px -10px #262626;
+		margin: 0px 5% 0px 5%;
+		padding-top: 10px;
+		height: 335px;
+		overflow-y: scroll;	
+	}
+
+	#paragraph-block {
+		padding: 10px;
+		min-width: 100px;
+	}
+
+	#paragraph p {
+		display: block;
 	}
 
 	.heading {
@@ -321,5 +485,31 @@ ul {
 	.price {
 		float: right;
 		text-align: right;
+	}
+
+	#mint-corner {
+		display: none;
+	}
+
+/* About styling */
+	#about-container {
+		width: auto;
+		min-width: 50px;
+		margin: 0px 10% 0px 10%;
+		height: 310px;
+		overflow-y: scroll;
+	}	
+
+	#about-container p {
+		line-height: 20px;
+	}
+
+	#about-header {
+		font-family: 'Raleway', sans-serif;
+		font-size: 20px;
+	}
+
+	#tibetan-corner {
+		display: none;
 	}
 }

@@ -1,5 +1,5 @@
 
-
+// Changes photo in the homePhotos array every 5 second
 var homePhotos = [
 	"img/home_photos/tibetan_01.jpg",
 	"img/home_photos/tibetan_11.jpg",
@@ -18,11 +18,12 @@ var index = 0;
 function showPhoto (photoURL) {
 	// Get a reference to the HTML img element
 	var img = document.getElementById('homeImage');
-	console.log(img);
 
 	// Change the 'src' part of the img to change
-	// which image file will be loaded
-	img.src = photoURL;
+	// which image file will be loaded if on Home page
+	if (img) {
+		img.src = photoURL;
+	}
 }
 
 function getNextImgURL() {
@@ -45,4 +46,20 @@ function changeSeconds() {
 
 showPhoto(homePhotos[0]);
 setInterval(changeSeconds, 4000);
+
+
+// Changes background of selected menu button
+var menuLinks = document.querySelectorAll('li a');
+
+menuLinks = Array.prototype.slice.call(menuLinks);
+
+menuLinks.forEach(function (link) {
+	if (link.href == window.location.href) {
+		link.className = 'buttonSelected';
+	}
+
+});
+
+
+
 
