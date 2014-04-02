@@ -57,6 +57,12 @@ nav li a {
 	box-shadow: 0 10px 6px -6px #262626;
 }
 
+.buttonSelected {
+	background-image: url("../img/fingerprint.png"); 
+	background-repeat: repeat;
+	/* background-color: rgba(240, 225, 127, .3) */
+}
+
 /* Removes indentation caused by original unordered list */
 ul {
 	padding: 0px;
@@ -66,11 +72,12 @@ ul {
 	width: 230px;
 }
 
+
 /* ======= HOME: Begin styling for "Home" page ======= */
 
 #tweed-band {
 	height: 400px;
-	background-image: url("../img/tweed_2x.png"); 
+	background-image: url("../img/fingerprint_small.png"); 
 	background-repeat: repeat;
 
 	/* inside box shadow */
@@ -100,10 +107,10 @@ ul {
 
 #beads-corner {
 	position: absolute;
-	max-width: 400px;
-	width: 40%;
+	width: 35%;
 	bottom: 0px;
 	left: 0px;
+	z-index: 6;
 }
 
 
@@ -113,7 +120,7 @@ ul {
 
 #tweed-band-tall {
 	height: 400px;
-	background-image: url("../img/tweed_2x.png"); 
+	background-image: url("../img/fingerprint_small.png"); 
 	background-repeat: repeat;
 
 	/* inside box shadow */
@@ -123,15 +130,16 @@ ul {
 }
 
 #paragraph {
-	width: auto;
-	padding: 0px 150px 0px 150px;
+	width: 70%;
+	margin: 0px 5% 0px 25%;
 	height: inherit;
 	overflow-y: scroll;	
 }
 
 #paragraph-block {
-	
 	padding: 50px;
+	min-width: 400px;
+	max-width: 1000px;
 }
 
 #paragraph p {
@@ -158,15 +166,26 @@ ul {
 	text-align: right;
 }
 
+#mint-corner {
+	position: absolute;
+	max-width: 300px;
+	width: 40%;
+	bottom: 0px;
+	left: 0px;
+	z-index: 6;
+}
+
 
 
 /* ======= ABOUT: Begin styling for "About" page ======= */
 
 #about-container {
-	width: auto;
-	padding: 50px 300px 0px 400px;
-	height: 350px;
-	overflow-y: scroll;	
+	width: 60%;
+	min-width: 400px;
+	height: 360px;
+	margin: 0px 25% 0px 35%;
+	padding-top: 40px;
+	overflow-y: scroll;
 }
 
 #about-container p {
@@ -178,6 +197,14 @@ ul {
 	font-size: 22px;
 }
 
+#tibetan-corner {
+	position: absolute;
+	height: 75%;
+	max-width: 30%;
+	bottom: 0px;
+	left: 0px;
+	z-index: 6;
+}
 
 
 /* ======= CONTACT: Begin styling for "Contact" page ======= */
@@ -286,6 +313,7 @@ ul {
 		height: 400px;
 	}
 
+/* Home styling */
 	#photos {
 		height: 185px;
 		width: 300px;
@@ -295,15 +323,22 @@ ul {
 		display: none;
 	}
 
+/* Menu styling */
 	#paragraph {
-		width: auto;
-		padding: 0px 20px 0px 20px;
-		height: inherit;
-		overflow-y: scroll;	
+	width: auto;
+	margin: 0px 10% 0px 10%;
+	padding-top: 15px;
+	height: 385px;
+	overflow-y: scroll;	
 	}
 
 	#paragraph-block {
-		padding: 20px;
+		padding: 10px;
+		min-width: 100px;
+	}
+
+	#paragraph p {
+		display: block;
 	}
 
 	.heading {
@@ -326,10 +361,16 @@ ul {
 		text-align: right;
 	}
 
+	#mint-corner {
+		display: none;
+	}
+
+/* About styling */
 	#about-container {
 		width: auto;
-		padding: 25px 10px 0px 10px;
-		height: 375px;
+		min-width: 50px;
+		margin: 0px 10% 0px 10%;
+		height: 360px;
 		overflow-y: scroll;	
 	}
 
@@ -340,6 +381,10 @@ ul {
 	#about-header {
 		font-family: 'Raleway', sans-serif;
 		font-size: 20px;
+	}
+
+	#tibetan-corner {
+		display: none;
 	}
 }
 
@@ -391,6 +436,7 @@ ul {
 		height: 350px;
 	}
 
+/* Home styling */
 	#photos {
 		height: 150px;
 		width: 250px;
@@ -403,15 +449,22 @@ ul {
 		display: none;
 	}
 
+/* Menu styling */
 	#paragraph {
 		width: auto;
-		padding: 0px 10px 0px 10px;
-		height: inherit;
+		margin: 0px 5% 0px 5%;
+		padding-top: 10px;
+		height: 335px;
 		overflow-y: scroll;	
 	}
 
 	#paragraph-block {
-		padding: 15px;
+		padding: 10px;
+		min-width: 100px;
+	}
+
+	#paragraph p {
+		display: block;
 	}
 
 	.heading {
@@ -434,12 +487,18 @@ ul {
 		text-align: right;
 	}
 
+	#mint-corner {
+		display: none;
+	}
+
+/* About styling */
 	#about-container {
 		width: auto;
-		padding: 20px 10px 0px 10px;
-		height: 330px;
-		overflow-y: scroll;	
-	}
+		min-width: 50px;
+		margin: 0px 10% 0px 10%;
+		height: 310px;
+		overflow-y: scroll;
+	}	
 
 	#about-container p {
 		line-height: 20px;
@@ -448,5 +507,9 @@ ul {
 	#about-header {
 		font-family: 'Raleway', sans-serif;
 		font-size: 20px;
+	}
+
+	#tibetan-corner {
+		display: none;
 	}
 }

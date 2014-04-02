@@ -19,6 +19,7 @@
       </div>
   </div>
 
+<script src="js/main.js"></script> 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
 <script src="js/map.js"></script>
 

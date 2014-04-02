@@ -18,11 +18,12 @@ var index = 0;
 function showPhoto (photoURL) {
 	// Get a reference to the HTML img element
 	var img = document.getElementById('homeImage');
-	console.log(img);
 
 	// Change the 'src' part of the img to change
-	// which image file will be loaded
-	img.src = photoURL;
+	// which image file will be loaded if on Home page
+	if (img) {
+		img.src = photoURL;
+	}
 }
 
 function getNextImgURL() {
@@ -48,7 +49,16 @@ setInterval(changeSeconds, 4000);
 
 
 // Changes background of selected menu button
+var menuLinks = document.querySelectorAll('li a');
 
+menuLinks = Array.prototype.slice.call(menuLinks);
+
+menuLinks.forEach(function (link) {
+	if (link.href == window.location.href) {
+		link.className = 'buttonSelected';
+	}
+
+});
 
 
 

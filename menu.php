@@ -53,5 +53,9 @@
 			</div>	
 		</div>	
 	</div>	
+	<div> 
+        <img id="mint-corner" src="img/mintsprig.png"/>
+    </div> 
+	<script src="js/main.js"></script> 
 </body>
 </html>

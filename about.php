@@ -16,7 +16,8 @@
 		</div>	
 	</div>
 	<div> 
-        <img id="beads-corner" src="img/beads_corner_2.png"/>
+        <img id="tibetan-corner" src="img/tibetan_corner.png"/>
     </div> 
+	<script src="js/main.js"></script>     
 </body>
 </html>
