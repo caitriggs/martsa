@@ -9,6 +9,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
+    <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=291459397556022";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+    <a id="fb-page-container" href="https://www.facebook.com/pages/Martsa-On-Elm/121875627822903" target="_blank">
+        <img id="fb-page" src="img/fb_button.png"/>
+    </a>
+    <div class="fb-like" data-href="https://www.facebook.com/pages/Martsa-On-Elm/121875627822903" 
+        data-layout="button_count" data-action="like" data-show-faces="false" data-share="false">
+    </div>   
     <div id="header-container">
         <nav>
             <ul>

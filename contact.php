@@ -5,7 +5,8 @@
         <div id="contact-content">
         <p>233 Elm St <br>Somerville, MA 02144</p>
         <p>(617) 666-0660</p>
-        <a href="https://www.google.com/maps/place/Martsa+On+Elm/@42.394942,-71.121487,17z/data=!3m1!4b1!4m2!3m1!1s0x89e377189ecadaaf:0xf5b19bff92004f2b" style="cursor: pointer; color: #B8312C" target="_blank">Get Directions</a>
+        <a href="https://www.google.com/maps/place/Martsa+On+Elm/@42.394942,-71.121487,17z/data=!3m1!4b1!4m2!3m1!1s0x89e377189ecadaaf:0xf5b19bff92004f2b" 
+          style="cursor: pointer; color: #B8312C" target="_blank">Get Directions</a>
         </div>
 </div>      
 
