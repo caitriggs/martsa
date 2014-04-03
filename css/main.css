@@ -334,8 +334,7 @@ ul {
 	#paragraph {
 	width: auto;
 	margin: 0px 10% 0px 10%;
-	padding-top: 15px;
-	height: 385px;
+	height: 400px;
 	overflow-y: scroll;	
 	}
 
@@ -460,8 +459,7 @@ ul {
 	#paragraph {
 		width: auto;
 		margin: 0px 5% 0px 5%;
-		padding-top: 10px;
-		height: 335px;
+		height: 350px;
 		overflow-y: scroll;	
 	}
 
