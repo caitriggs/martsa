@@ -11,7 +11,7 @@
 				Fri-Sat: 11:30am - 10:30pm<br>
 				Sun: closed<br>
 				<span id="lunch-buffet">Lunch buffet</span><br>
-				Mon-Sat: 11:30am - 2pm<br>
+				Mon-Sat: 11:30am - 2:30pm<br>
 			</p>
 			<br>
 			<p>Some info on key ingredients used, and general Tibetan/Himalayan dishes...
