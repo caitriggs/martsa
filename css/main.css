@@ -169,8 +169,8 @@ ul {
 
 #mint-corner {
 	position: absolute;
-	max-width: 300px;
-	width: 40%;
+	max-width: 25%;
+	width: 35%;
 	bottom: 0px;
 	left: 0px;
 	z-index: 6;
