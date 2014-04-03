@@ -10,8 +10,29 @@
 */
 
 
-/* ======= Header and general background styling ======= */
+/* Facebook plugin styling */
+#fb-page-container {
+	height: 35px;
+	width: 35px;
+	position: absolute;
+	padding: 5px;
+	z-index: 10;
+}
 
+.fb-like {
+	position: absolute;
+	top: 15px;
+	left: 50px;
+	z-index: 10;
+}
+
+#fb-page {
+	position: absolute;
+	vertical-align: bottom;
+	width: 35px;
+}
+
+/* ======= Header and general background styling ======= */
 body {
 	background-image: url("../img/tweed.png"); 
 	background-repeat: repeat;
@@ -108,6 +129,7 @@ ul {
 #beads-corner {
 	position: absolute;
 	width: 35%;
+	max-height: 75%;
 	bottom: 0px;
 	left: 0px;
 	z-index: 6;
@@ -202,6 +224,15 @@ ul {
 #hours, #lunch-buffet {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
+}
+
+#fb-like-about {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 10px;
+	margin-left: 40%;
+	z-index: 10;
 }
 
 #tibetan-corner {

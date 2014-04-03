@@ -3,8 +3,12 @@
 		<div id="about-container">
 			<p><span id="about-header">Martsa on Elm </span>
 				serves up family-style Tibetan and Himalayan cuisine at 
-				our Davis Square location. Join us for lunch or dinner! 
+				our Davis Square location. Join us for our lunch buffet or dinner! 
 			</p>
+			<br>
+			<p>Follow us on Facebook to get updates on our lunch buffet offerings 
+				and upcoming events, or checkout our Facebook page.
+	        </p>
 			<br>
 			<p><span id="hours">Our hours are:</span><br>
 				Mon-Thurs: 11:30am - 9:30pm<br>
