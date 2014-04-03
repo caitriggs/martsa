@@ -50,6 +50,19 @@
 					<span class="description">ligula, porttitor eu, consequat vitae, eleifend ac, enim aliquam lorem ante, dapibus in, viverra quis, feugiat a.</span>
 					<span class="price">$12.50</span></p>
 				<br>
+				<p><span class="heading">Lunch Buffet (dishes may vary) - $9.00</span></p>
+				<br>
+				<p><span class="item">Nullam dictum felis</span> 
+					<span class="description">eu pede mollis pretium. Integer tincidunt. Cras dapibus.</span>	
+					</p>
+				<br>
+				<p><span class="item">Vivamus</span> 
+					<span class="description">elementum semper nisi. Aenean vulputate eleifend tellus.</span>
+					</p>
+				<br>
+				<p><span class="item">Aenean leo</span> 
+					<span class="description">ligula, porttitor eu, consequat vitae, eleifend ac, enim aliquam lorem ante, dapibus in, viverra quis, feugiat a.</span>
+				<br>
 			</div>	
 		</div>	
 	</div>	

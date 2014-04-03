@@ -199,6 +199,11 @@ ul {
 	font-size: 22px;
 }
 
+#hours, #lunch-buffet {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+}
+
 #tibetan-corner {
 	position: absolute;
 	height: 75%;
