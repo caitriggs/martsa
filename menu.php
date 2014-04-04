@@ -69,6 +69,7 @@
 	<div> 
         <img id="mint-corner" src="img/mintsprig.png"/>
     </div> 
+    <?php include "templates/footer.php"; ?> 
 	<script src="js/main.js"></script> 
 </body>
 </html>

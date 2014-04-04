@@ -301,6 +301,21 @@ ul {
 }
 
 
+/* ======= FOOTER made by tag ======= */
+#footer-madeby {
+	text-decoration: none;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	font-size: 11px;
+	color: #E0973E;
+	text-shadow: 1px 3px 3px #262626;
+	z-index: 12;
+}
+
+
+
+
 /* ======= MEDIA QUERY styling ======= */
 
 /* If screen width is anything larger than an iPhone, 
@@ -547,5 +562,5 @@ ul {
 
 	#tibetan-corner {
 		display: none;
-	}
+	}	
 }

@@ -37,6 +37,7 @@
 	<div> 
         <img id="tibetan-corner" src="img/tibetan_corner.png"/>
     </div> 
-	<script src="js/main.js"></script>     
+    <?php include "templates/footer.php"; ?> 
+	<script src="js/main.js"></script>    
 </body>
 </html>
