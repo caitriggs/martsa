@@ -1,3 +1,3 @@
-<a id="footer-madeby" href="https://github.com/caitriggs" target="_blank">
+<a id="footer-madeby" href="http://caitriggs.com" target="_blank">
 	site made by caitriggs
 </a>
